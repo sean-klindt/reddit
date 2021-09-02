@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # post 'subs#create'
 
   # resources 
-  resources :subs
-
+  resources :subs do
+  resources :topics
+  end
   # to access it would be localhost:3000/rails/info/routes, with your server running
 end
